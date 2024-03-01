@@ -1,39 +1,56 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import NavBar from "./components/organisms/NavBar";
 
 function App() {
-    const [count, setCount] = useState(0);
-
+    const links = [
+        { href: "#a", text: "Dashboard", ariaCurrent: "page" },
+        { href: "#b", text: "Team" },
+        { href: "#c", text: "Projects" },
+        { href: "#d", text: "Calendar" },
+        { href: "#e", text: "Reports" },
+    ];
     return (
         <>
-            <div>
-                <a href="https://vitejs.dev" target="_blank">
-                    <img src={viteLogo} className="logo" alt="Vite logo" />
-                </a>
-                <a href="https://react.dev" target="_blank">
-                    <img
-                        src={reactLogo}
-                        className="logo react"
-                        alt="React logo"
-                    />
-                </a>
-            </div>
-            <h1>Vite + React</h1>
-            <div className="card">
-                <button onClick={() => setCount((count) => count + 1)}>
-                    count is {count}
-                </button>
-                <p>
-                    Edit <code>src/App.jsx</code> and save to test HMR
-                </p>
-            </div>
-            <p className="read-the-docs">
-                Click on the Vite and React logos to learn more
-            </p>
+            {/* <!--
+  This example requires updating your template:
 
-            <h1 className="text-3xl font-bold underline">Hello world!</h1>
+  ```
+  <html className="h-full bg-gray-100">
+  <body className="h-full">
+  ```
+--> */}
+            <div className="min-h-full">
+                <nav className="bg-gray-800">
+                    <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                        <div className="flex h-16 items-center justify-between">
+                            <div className="flex items-center">
+                                <div className="flex-shrink-0 text-white font-serif">
+                                    Victor Padula
+                                </div>
+
+                                <div className="hidden md:block">
+                                    <NavBar links={links} />
+                                </div>
+                            </div>
+                            <div className="-mr-2 flex md:hidden">
+                                <button>aaa</button>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+
+                <header className="bg-white shadow">
+                    <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+                        <h1 className="text-3xl font-bold tracking-tight text-gray-900">
+                            Titulo
+                        </h1>
+                    </div>
+                </header>
+                <main>
+                    <div className="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+                        Conteudo
+                    </div>
+                </main>
+            </div>
         </>
     );
 }
