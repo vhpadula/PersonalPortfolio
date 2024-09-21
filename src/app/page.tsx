@@ -1,101 +1,151 @@
-import Image from "next/image";
+import React from "react";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+const CVPage: React.FC = () => {
+    return (
+        <div className="flex flex-col justify-center items-center">
+            <h1 className="text-3xl">Victor Padula</h1>
+            <h1 className="text-2xl mb-1">Software Engineer</h1>
+            <p>São Paulo - SP - Brazil</p>
+            <p>
+                Email:{" "}
+                <a href="mailto:victorhpadula@gmail.com">
+                    victorhpadula@gmail.com
+                </a>{" "}
+                | Phone: <a href="tel:+5515991462145">+55 (15) 99146-2145</a>
+            </p>
+            <p>
+                Links: <a href="https://linktr.ee/vhpadula">Portfolio</a> |{" "}
+                <a href="https://linkedin.com/in/vhpadula">LinkedIn</a> |{" "}
+                <a href="https://github.com/vhpadula">GitHub</a>
+            </p>
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    University of Sao Paulo, Bachelor in Computer Engineering
+                    (2019 – 2024)
+                </li>
+                <li>
+                    Politecnico di Torino, Master’s Degree Erasmus in Software
+                    Engineering (2022 - 2023)
+                </li>
+            </ul>
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>XR & Data Engineer Intern, Virtualisurg</strong> -
+                    Paris, Montreal and Sao Paulo (May 2024 - Sep 2024)
+                    <ul>
+                        <li>
+                            Developed internal tools and PoC projects for XR
+                            experiences applied to health and medicine using
+                            Unity Engine
+                        </li>
+                        <li>
+                            Worked on backend infrastructure for license control
+                            and data collection
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>
+                        Fullstack Software Developer, REAG Investimentos
+                    </strong>{" "}
+                    - Sao Paulo, SP (Sep 2023 – Dec 2023)
+                    <ul>
+                        <li>
+                            Developed internal tools for data analysis and
+                            connection to finance market APIs
+                        </li>
+                        <li>
+                            Designed UX and Cloud Architecture with Django
+                            framework
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Data Scientist Intern</strong> - Sao Paulo, SP (Jan
+                    2022 – Apr 2022)
+                    <ul>
+                        <li>
+                            Worked in data engineering, experimenting with AI
+                            models
+                        </li>
+                        <li>
+                            Developed data analytics modules with GCP and
+                            machine learning in Python and SQL
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Mobile Developer Intern</strong> - Sao Paulo, SP
+                    (May 2021 - Aug 2021)
+                    <ul>
+                        <li>
+                            Developed Android mobile applications with Kotlin in
+                            Android Studio
+                        </li>
+                        <li>
+                            Worked on production-scale systems in a Scrum team
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <strong>ONGAdmin (Graduation Thesis)</strong> (2024)
+                    <ul>
+                        <li>
+                            Developed UX and system architecture for open-source
+                            NGO administration tool
+                        </li>
+                        <li>Tools: Next.js, Spring Boot</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Vardis Transfer System</strong> (2024)
+                    <ul>
+                        <li>
+                            Developed a real-time money transfer system for
+                            board game players
+                        </li>
+                        <li>Tools: Next.js, Node.js, Redis</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>JingasAI</strong> (2024)
+                    <ul>
+                        <li>
+                            AI project implementing a Brazilian Portuguese
+                            &quot;Alexa&quot; with NLP models
+                        </li>
+                        <li>Tools: Pytorch, Docker</li>
+                    </ul>
+                </li>
+            </ul>
+            <h2>Skills</h2>
+            <ul>
+                <li>
+                    <strong>Languages:</strong> Python, Java, Kotlin, C#, SQL,
+                    HTML, CSS, JavaScript, TypeScript
+                </li>
+                <li>
+                    <strong>Technologies:</strong> Django, Pandas, Pytorch,
+                    Spring Boot, Android Studio, React, Next.js, Node.js,
+                    Unity3D, Figma, Docker, Linux, GCP
+                </li>
+                <li>
+                    <strong>Proficiencies:</strong> Software Engineering, Cloud
+                    Computing, System Architecture, Machine Learning,
+                    International Team Communication
+                </li>
+                <li>
+                    <strong>Idioms: </strong>Native Portuguese, English C1,
+                    Italian A2
+                </li>
+            </ul>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
-}
+    );
+};
+
+export default CVPage;
