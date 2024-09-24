@@ -43,6 +43,31 @@ export default function Engineering() {
                             <strong>
                                 <a
                                     className="hover:underline"
+                                    href="https://github.com/vhpadula/PersonalPortfolio"
+                                >
+                                    This Own Website! (Personal Portfolio)
+                                </a>
+                            </strong>{" "}
+                            (2024)
+                            <ul className="m-2 list-item">
+                                <li>
+                                    - Personal Portfolio project developed from
+                                    scratch. Includes a CMS backend still in
+                                    development for adding dynamic content to
+                                    the website - By now just serves static
+                                    content
+                                </li>
+                                <li>
+                                    - Tools: Next.js, Node Express, Typescript,
+                                    TailwindCSS
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <strong>
+                                <a
+                                    className="hover:underline"
                                     href="https://github.com/vhpadula/PlumaFit-User"
                                 >
                                     PlumaFit
