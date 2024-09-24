@@ -3,6 +3,7 @@ import Linkedin from "../../public/icons/linkedin.svg";
 import Github from "../../public/icons/github.svg";
 import Youtube from "../../public/icons/youtube.svg";
 import Spotify from "../../public/icons/spotify.svg";
+import Image from "next/image";
 export default function Home() {
     return (
         <>
@@ -16,7 +17,7 @@ export default function Home() {
             <main>
                 <div className="flex items-center justify-center text-center m-10">
                     <div className="rounded-full overflow-hidden w-128 h-128">
-                        <img
+                        <Image
                             src="/images/myself.jpg"
                             alt="Picture of the author"
                             width={512}

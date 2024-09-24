@@ -183,7 +183,7 @@ export default function Engineering() {
                         </li>
                     </ul>
                     <div className="w-full mt-5">
-                        <Disclosure as="div" defaultOpen={true}>
+                        <Disclosure as="div" defaultOpen={false}>
                             <DisclosureButton className="group flex w-full items-center justify-between">
                                 <span className="text-xl font-medium group-data-[hover]:text-white/80">
                                     Curriculum Vitae

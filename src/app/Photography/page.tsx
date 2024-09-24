@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function Home() {
     return (
         <>
@@ -41,7 +42,7 @@ export default function Home() {
                             "sitnwalk.jpg",
                             "turin.jpg",
                         ].map((image) => (
-                            <img
+                            <Image
                                 key={image}
                                 src={`/images/${image}`}
                                 alt={image.split(".")[0]}
