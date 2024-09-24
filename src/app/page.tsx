@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -27,7 +28,7 @@ export default function Home() {
                             and also a Photography and Music Enthusiast.
                         </p>
                         <p className="m-5 text-lg">
-                            I&apos;ve developed this website to display my
+                            I&apos;ve developed this website to share my
                             personal projects and thoughts.{" "}
                         </p>
                     </div>
@@ -40,11 +41,56 @@ export default function Home() {
                             victorhpadula@gmail.com
                         </a>{" "}
                     </p>
-                    <p>
-                        Links:{" "}
-                        <a href="https://linkedin.com/in/vhpadula">LinkedIn</a>{" "}
-                        | <a href="https://github.com/vhpadula">GitHub</a>
-                    </p>
+                    <div className="flex items-center mt-1">
+                        <p>Links: </p>
+                        <Link
+                            className="ml-2 mr-1"
+                            href="https://linkedin.com/in/vhpadula"
+                        >
+                            <Image
+                                src="/icons/linkedin.svg"
+                                alt="Linkedin"
+                                width={36}
+                                height={36}
+                            />
+                        </Link>
+                        <Link
+                            className="mx-1"
+                            href="https://github.com/vhpadula"
+                        >
+                            <Image
+                                className="invert-colors"
+                                src="/icons/github.svg"
+                                alt="Github"
+                                width={36}
+                                height={36}
+                            />
+                        </Link>
+                        <Link
+                            className="mx-1"
+                            href="https://www.youtube.com/@canalfluctus8599"
+                        >
+                            <Image
+                                className="invert-colors"
+                                src="/icons/youtube.svg"
+                                alt="Youtube"
+                                width={36}
+                                height={36}
+                            />
+                        </Link>
+                        <Link
+                            className="mx-1"
+                            href="https://open.spotify.com/intl-pt/artist/3owqu7Lnlb1lgArhv2hXoB?si=kZqTDiP1SC-OM31fn1L-FA"
+                        >
+                            <Image
+                                className="invert-colors"
+                                src="/icons/spotify.svg"
+                                alt="potify"
+                                width={36}
+                                height={36}
+                            />
+                        </Link>
+                    </div>
                 </div>
             </main>
         </>
