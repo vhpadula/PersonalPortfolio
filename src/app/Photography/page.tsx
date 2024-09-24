@@ -27,21 +27,21 @@ export default function Home() {
                     </p>
                     <div className="grid grid-cols-5 gap-4">
                         {[
-                            "amsterdam.jpg",
-                            "capri.jpg",
-                            "croatia.jpg",
-                            "dorival.jpg",
-                            "espresso.jpg",
-                            "gabu.jpg",
-                            "kyoto.JPG",
-                            "latte.jpg",
-                            "legaulois.jpg",
-                            "madrid.jpg",
-                            "orangecat.jpg",
-                            "racetrack.jpg",
-                            "sahara.jpg",
-                            "sitnwalk.jpg",
-                            "turin.jpg",
+                            "../../public/amsterdam.jpg",
+                            "../../public/capri.jpg",
+                            "../../public/croatia.jpg",
+                            "../../public/dorival.jpg",
+                            "../../public/espresso.jpg",
+                            "../../public/gabu.jpg",
+                            "../../public/kyoto.JPG",
+                            "../../public/latte.jpg",
+                            "../../public/legaulois.jpg",
+                            "../../public/madrid.jpg",
+                            "../../public/orangecat.jpg",
+                            "../../public/racetrack.jpg",
+                            "../../public/sahara.jpg",
+                            "../../public/sitnwalk.jpg",
+                            "../../public/turin.jpg",
                         ].map((image) => (
                             <Image
                                 key={image}

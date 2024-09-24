@@ -18,7 +18,7 @@ export default function Home() {
                 <div className="flex items-center justify-center text-center m-10">
                     <div className="rounded-full overflow-hidden w-128 h-128">
                         <Image
-                            src="/images/myself.jpg"
+                            src="../../public/images/myself.jpg"
                             alt="Picture of the author"
                             width={512}
                             height={512}
