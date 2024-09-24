@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import Linkedin from "../../public/icons/linkedin.svg";
+import Github from "../../public/icons/github.svg";
+import Youtube from "../../public/icons/youtube.svg";
+import Spotify from "../../public/icons/spotify.svg";
 export default function Home() {
     return (
         <>
@@ -47,20 +50,14 @@ export default function Home() {
                             className="ml-2 mr-1"
                             href="https://linkedin.com/in/vhpadula"
                         >
-                            <Image
-                                src="/icons/linkedin.svg"
-                                alt="Linkedin"
-                                width={36}
-                                height={36}
-                            />
+                            <Linkedin alt="Linkedin" width={36} height={36} />
                         </Link>
                         <Link
                             className="mx-1"
                             href="https://github.com/vhpadula"
                         >
-                            <Image
+                            <Github
                                 className="invert-colors"
-                                src="/icons/github.svg"
                                 alt="Github"
                                 width={36}
                                 height={36}
@@ -70,9 +67,8 @@ export default function Home() {
                             className="mx-1"
                             href="https://www.youtube.com/@canalfluctus8599"
                         >
-                            <Image
+                            <Youtube
                                 className="invert-colors"
-                                src="/icons/youtube.svg"
                                 alt="Youtube"
                                 width={36}
                                 height={36}
@@ -82,10 +78,9 @@ export default function Home() {
                             className="mx-1"
                             href="https://open.spotify.com/intl-pt/artist/3owqu7Lnlb1lgArhv2hXoB?si=kZqTDiP1SC-OM31fn1L-FA"
                         >
-                            <Image
+                            <Spotify
                                 className="invert-colors"
-                                src="/icons/spotify.svg"
-                                alt="potify"
+                                alt="Spotify"
                                 width={36}
                                 height={36}
                             />
