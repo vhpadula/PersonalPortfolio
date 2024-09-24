@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import Linkedin from "../../public/icons/linkedin.svg";
 import Github from "../../public/icons/github.svg";
@@ -17,8 +16,8 @@ export default function Home() {
             <main>
                 <div className="flex items-center justify-center text-center m-10">
                     <div className="rounded-full overflow-hidden w-128 h-128">
-                        <Image
-                            src="../../public/images/myself.jpg"
+                        <img
+                            src="/images/myself.jpg"
                             alt="Picture of the author"
                             width={512}
                             height={512}
