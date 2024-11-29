@@ -24,7 +24,7 @@ export default function Home() {
                         Meanwhile, checkout some of my favorite work on those
                         static images:
                     </p>
-                    <div className="grid grid-cols-5 gap-4">
+                    <div className="grid grid-cols-2 gap-4">
                         {[
                             "amsterdam.jpg",
                             "capri.jpg",
